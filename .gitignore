@@ -1,0 +1,44 @@
+# WhiteFrame 4.0 / GitHub ignore rules
+# The release exe and full source are tracked; generated output is not.
+
+# ---- test images / sample photos (explicitly excluded from this repo) ----
+samples/
+*.jpg
+*.jpeg
+*.bmp
+*.tif
+*.tiff
+*.webp
+# NOTE: src/icon.png and src/icon.ico are source assets, keep them.
+
+# ---- generated presets, archives, older builds ----
+*.cube
+*.xmp
+*.zip
+LUTs/
+LUTs_3.6/
+XMP_3.6/
+WhiteFrame.exe
+WhiteFrame2*.exe
+WhiteFrame3*.exe
+
+# ---- build output / runtime ----
+build/
+dist/
+out/
+output/
+__pycache__/
+*.pyc
+*.log
+*.bak
+
+# ---- editor / OS ----
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ---- local config, never upload credentials ----
+.env
+*.rdp
+config.local.json
